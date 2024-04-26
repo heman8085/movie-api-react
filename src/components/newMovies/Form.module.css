@@ -1,0 +1,16 @@
+.form{
+flex-direction: column;
+display: flex;
+flex-wrap: wrap;
+}
+
+.form_data  {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+
+
