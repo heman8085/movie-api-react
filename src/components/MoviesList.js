@@ -8,9 +8,9 @@ const MovieList = (props) => {
       {props.movies.map((movie) => (
         <Movie
           key={movie.id}
+          poster={movie.poster}
           title={movie.title}
           releaseDate={movie.releaseDate}
-          openingText={movie.openingText}
         />
       ))}
     </ul>
