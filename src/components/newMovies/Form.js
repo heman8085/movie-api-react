@@ -16,26 +16,29 @@ const Form = (props) => {
     props.onSaveMovieData(newMovie);
   };
   return (
-    <form onSubmit={handleFormSubmit} className={classes.form}>
-      <div className={classes.form_data}>
-        <label>Title</label>
+    <form onSubmit={handleFormSubmit}>
+      <div className={classes.control}>
+        <label htmlFor="title">Title</label>
         <input
+          id="title"
           type="text"
           value={newTitle}
           onChange={(e) => setNewTitle(e.target.value)}
         />
       </div>
-      <div className={classes.form_data}>
-        <label>Poster URL</label>
+      <div className={classes.control}>
+        <label htmlFor="url">Poster URL</label>
         <input
+          id="url"
           type="url"
           value={newUrl}
           onChange={(e) => setNewUrl(e.target.value)}
         />
       </div>
-      <div className={classes.form_data}>
-        <label>Released Year</label>
+      <div className={classes.control}>
+        <label htmlFor="year">Released Year</label>
         <input
+          id="year"
           type="text"
           value={newReleseDate}
           onChange={(e) => setNewReleseDate(e.target.value)}
